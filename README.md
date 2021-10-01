@@ -57,3 +57,9 @@ sudo usermod -d [folder] [username]
 ```bash
 tar -zxvf [file]
 ```
+
+**MongoDB fixing restart code 14**
+```chown -R mongodb:mongodb /var/lib/mongodb
+chown mongodb:mongodb /tmp/mongodb-27017.sock
+
+sudo service mongod restart```
